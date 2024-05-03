@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tic Tac Toe - Game Arcade</title>
+	<!-- <link rel="stylesheet" href="styles.css"> -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="tictactoe.css">
+</head>
+
+<body class="no-margins light-theme" id="main">
+	<header class="no-margins">
+		<div id="header">
+			<div id="header-section">
+				<div id="header-section-left">
+					<a href="index.html">
+						<div id="back-arrow">
+							Back
+						</div>
+					</a>
+				</div>
+				<h1 id="header-section-center">
+					Tic Tac Toe
+				</h1>
+				<div id="header-section-right">
+					<button id="theme-button">
+						Theme
+					</button>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div id="gameContainer" class="game-area">
+		<div id="difficultySelection" class="font-black">
+			<label>Difficulty:</label>
+			<input type="radio" name="difficulty" id="easy" value="easy"> Easy
+			<input type="radio" name="difficulty" id="medium" value="medium" checked> Medium
+			<input type="radio" name="difficulty" id="hard" value="hard"> Hard
+		</div>
+		<div id="gameBoard" class="board font-black">
+			<!-- Creating 9 cells for the Tic Tac Toe grid -->
+			<button class="cell" data-cell-index="0"></button>
+			<button class="cell" data-cell-index="1"></button>
+			<button class="cell" data-cell-index="2"></button>
+			<button class="cell" data-cell-index="3"></button>
+			<button class="cell" data-cell-index="4"></button>
+			<button class="cell" data-cell-index="5"></button>
+			<button class="cell" data-cell-index="6"></button>
+			<button class="cell" data-cell-index="7"></button>
+			<button class="cell" data-cell-index="8"></button>
+		</div>
+		<div id="resultDisplay" class="font-black">Player X's turn</div>
+		<div id="asdf">
+			<button id="restartButton">Restart Game</button>
+		</div>
+	</div>
+
+	<footer class="font-black">
+		<p>Copyright &copy; 2024 Game Arcade and Nico Medina</p>
+	</footer>
+
+	<script src="tictactoe.js"></script>
+</body>
+
+</html>

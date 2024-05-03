@@ -1,0 +1,183 @@
+#game-area, #game, .guess-letter-tile, #keyboard, .keyboard-line {
+	display: flex;
+	justify-content: center;
+}
+
+#game-area {
+	flex-direction: column;
+	height: 100%;
+	align-items: center;
+	width: 100%;
+}
+
+#score {
+	height: 40px;
+	width: 100%;
+	color: white;
+	background-color: rgb(39, 39, 39);
+	border: 2px solid rgb(146, 146, 146);
+}
+
+.hide-score{
+	display: none
+}
+
+.show-score{
+	display: block;
+}
+
+#game {
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+	width: auto;
+}
+
+#guess-grid {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	height: 395px;
+	width: 500px;
+	display: grid;
+	justify-content: center;
+	grid-gap: 5px;
+	grid-template-columns: 62px 62px 62px 62px 62px;
+	grid-template-rows: 62px 62px 62px 62px 62px 62px;
+}
+
+.guess-letter-tile {
+	border: 2px solid rgb(121, 121, 121);
+	text-align: center;
+	align-items: center;
+	color: black;
+	font-family: Calibri;
+	font-size: 28pt;
+	font-weight: bold;
+}
+
+#keyboard {
+	height: 250px;
+	flex-direction: column;
+	width: 100%;
+}
+
+.keyboard-line {
+	padding: 5px;
+}
+
+.keyboard-key-tile {
+	border: none;
+	margin-inline: 2.5px;
+	border-radius: 5px;
+	color: white;
+	font-family: Calibri;
+	font-size: 16pt;
+	font-weight: bold;
+	cursor: pointer;
+	width: 43px;
+	height: 58px;
+}
+
+#enter-key-tile, #backspace-key-tile {
+	background-color: rgb(139, 139, 139);
+}
+
+#enter-key-tile {
+	font-size: 11pt;
+	flex-grow: 2;
+}
+
+#backspace-key-tile {
+	flex-grow: 2;
+}
+
+.empty {
+	background-color: rgb(139, 139, 139);
+}
+
+.empty2 {
+	background-color: none;
+}
+
+.incorrect {
+	background-color: rgb(87, 87, 87);
+}
+
+.exists {
+	background-color: rgb(196, 184, 75);
+}
+
+.correct {
+	background-color: rgb(98, 165, 107);
+}
+
+@keyframes bounce {
+	0% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-20px);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes shake {
+	0% {
+		transform: translateX(0);
+	}
+
+	25%	{
+		transform: translateX(-20px);
+	}
+
+	50% {
+		transform: translateX(0);
+	}
+
+	75% {
+		transform: translateX(20px);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+.shake {
+	animation: shake 0.5s ease-in-out;
+}
+
+.bounce{
+	animation: bounce 0.5s ease-in-out;
+}
+
+@media(max-width: 540px) {
+	#game-area {
+		height: auto;
+	}
+
+	#guess-grid {
+		height: 330px;
+		width: 320px;
+		grid-gap: 3px;
+		grid-template-columns: 55px 55px 55px 55px 55px;
+		grid-template-rows: 55px 55px 55px 55px 55px 55px;
+	}
+
+	.keyboard-key-tile {
+		width: 26px;
+		height: 41px;
+	}
+
+	#enter-key-tile {
+		font-size: 9pt;
+	}
+
+	#keyboard {
+		height: 200px;
+	}
+}

@@ -1,0 +1,135 @@
+a {
+	text-decoration: none;
+}
+
+.dark-theme {
+	background-color: rgb(39, 39, 39);
+	padding: 0px;
+	margin: 0px;
+}
+
+.light-theme {
+	background-color: rgb(219, 219, 219);
+	padding: 0px;
+	margin: 0px;
+}
+
+.green-theme {
+	background-color: darkslategrey;
+	padding: 0px;
+	margin: 0px;
+}
+
+.no-margins {
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+}
+
+h1 {
+	color: white;
+	text-align: center;
+	font-family: Georgia, Serif, 'Times New Roman', Times, serif;
+}
+
+#header-section,
+#header-section-left,
+#header-section-right {
+	display: flex;
+	justify-content: center;
+}
+
+#header {
+	background-color: rgb(20, 20, 20);
+	height: 100px;
+	align-content: center;
+	border-block-end: 1px solid rgb(80, 80, 80);
+}
+
+#header-section {
+	height: 67px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 0px;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-grow: 2;
+	flex-wrap: nowrap;
+	align-items: center;
+	background-color: rgb(20, 20, 20);
+}
+
+#header-section-left {
+	justify-content: flex-start;
+	width: 350px;
+}
+
+#back-arrow {
+	width: 60px;
+	height: 30px;
+	background-color: rgb(139, 139, 139);
+	border: 2px solid rgb(102, 102, 102);
+	text-align: center;
+	color: black;
+	font-size: 18pt;
+	cursor: pointer;
+}
+
+#header-section-center {
+	height: 40x;
+	flex-grow: 2;
+}
+
+#header-section-right {
+	justify-content: flex-end;
+	flex-direction: row;
+	text-align: center;
+	height: 30px;
+	width: 350px;
+}
+
+#theme-button {
+	background-color: rgb(167, 162, 162);
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+#games {
+	display: flex;
+	justify-content: center;
+	height: auto;
+	width: 100%;
+	flex-wrap: wrap;
+	align-items: center;
+	background-color: rgb(219, 219, 219);
+}
+
+.game-block-tile {
+	display: flex;
+	flex-direction: column;
+	height: 500px;
+	width: 300px;
+	border: 1px solid rgb(80, 80, 80);
+	background-color: rgb(255, 255, 255);
+	margin: 30px;
+}
+
+.game-block-tile:hover {
+	box-shadow: 0px 0px 10px 5px black;
+}
+
+h2 {
+	color: rgb(51, 51, 255);
+	font-family: Calibri, Times, serif;
+	text-align: center;
+	text-decoration: none;
+}
+
+@media(max-width: 540px) {
+
+	#header {
+
+		height: 66px;
+	}
+}

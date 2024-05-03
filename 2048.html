@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2048 Game</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="2048.css">
+</head>
+
+<body class="no-margins light-theme" id="main">
+	<header class="no-margins">
+		<div id="header">
+			<div id="header-section">
+				<div id="header-section-left">
+					<a href="index.html">
+						<div id="back-arrow">
+							Back
+						</div>
+					</a>
+				</div>
+				<h1 id="header-section-center">
+					2048 Game
+				</h1>
+				<div id="header-section-right">
+					<button id="theme-button">
+						Theme
+					</button>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container">
+		<div id="grid-container" class="grid-container">
+			<!-- Grid cells will be dynamically generated here -->
+		</div>
+		<div id="arrow-button">
+			<button onclick="move('up')">↑</button>
+		</div>
+		<div>
+			<button onclick="move('left')">←</button>
+			<button onclick="move('down')">↓</button>
+	    <button onclick="move('right')">→</button>
+		</div>
+    <div id="reset-button">
+			<button onclick="startGame()">New Game</button>
+		</div>
+    
+	</div>
+	<script src="2048.js"></script>
+</body>
+<footer>
+	<p>Copyright &copy; Nico Medina</p>
+</footer>
+
+</html>
+
