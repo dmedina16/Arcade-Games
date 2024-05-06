@@ -7,10 +7,8 @@ function id(id) {
 
 function startGame() {
 	grid = Array.from({ length: GRID_SIZE }, () => Array(GRID_SIZE).fill(0));
-
 	addRandomTile();
 	addRandomTile();
-
 	displayGrid();
 }
 

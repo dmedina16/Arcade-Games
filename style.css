@@ -78,6 +78,7 @@ h1 {
 #header-section-center {
 	height: 40x;
 	flex-grow: 2;
+	white-space: nowrap;
 }
 
 #header-section-right {
@@ -127,9 +128,11 @@ h2 {
 }
 
 @media(max-width: 540px) {
-
 	#header {
-
 		height: 66px;
+	}
+	
+	h1 {
+		font-size: 16pt;
 	}
 }

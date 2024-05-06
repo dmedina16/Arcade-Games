@@ -1,4 +1,9 @@
+a {
+	text-decoration: none;
+}
+
 body {
+	background-color: darkslategrey;
 	text-align: center;
 }
 
@@ -90,12 +95,12 @@ body {
 	color: #0c1021;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 768px) {
 
 	/* MOBILE */
 	#gameContainer {
-		width: 70vw;
-		height: 70vw;
+		width: 80vw;
+		height: 80vw;
 	}
 
 	.gameBoardPixel {

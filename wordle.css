@@ -18,11 +18,11 @@
 	border: 2px solid rgb(146, 146, 146);
 }
 
-.hide-score{
+.hide-score {
 	display: none
 }
 
-.show-score{
+.show-score {
 	display: block;
 }
 
@@ -78,7 +78,8 @@
 	height: 58px;
 }
 
-#enter-key-tile, #backspace-key-tile {
+#enter-key-tile,
+#backspace-key-tile {
 	background-color: rgb(139, 139, 139);
 }
 
@@ -130,7 +131,7 @@
 		transform: translateX(0);
 	}
 
-	25%	{
+	25% {
 		transform: translateX(-20px);
 	}
 
@@ -151,7 +152,7 @@
 	animation: shake 0.5s ease-in-out;
 }
 
-.bounce{
+.bounce {
 	animation: bounce 0.5s ease-in-out;
 }
 

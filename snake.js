@@ -10,6 +10,12 @@ function id(id) {
   return document.getElementById(id);
 }
 
+document.addEventListener('keydown', function(event) {
+  if (event.keyCode >= 37 && event.keyCode <= 40) { // Check if arrow keys are pressed
+      event.preventDefault(); // Prevent default scrolling behavior
+  }
+});
+
 /// THE GAME BOARD:
 const gameContainer = id("gameContainer");
 
@@ -143,11 +149,11 @@ const moveSnake = () => {
   }, snakeLength);
 
   totalDistanceTravelled++;
-  document.id("blocksTravelled").innerHTML = totalDistanceTravelled;
+  id("blocksTravelled").innerHTML = totalDistanceTravelled;
 
   if (currentSnakeHeadPosition == currentFoodPostion) {
     totalFoodAte++;
-    document.id("pointsEarned").innerHTML = totalFoodAte;
+    id("pointsEarned").innerHTML = totalFoodAte;
     snakeLength = snakeLength + 100;
     createFood();
   }
@@ -166,10 +172,10 @@ var moveSnakeInterval = setInterval(moveSnake, 80);
 
 addEventListener("keydown", (e) => changeDirection(e.keyCode));
 
-const leftButton = document.getElementById("leftButton");
-const rightButton = document.getElementById("rightButton");
-const upButton = document.getElementById("upButton");
-const downButton = document.getElementById("downButton");
+const leftButton = id("leftButton");
+const rightButton = id("rightButton");
+const upButton = id("upButton");
+const downButton = id("downButton");
 
 leftButton.onclick = () => changeDirection(LEFT_DIR);
 rightButton.onclick = () => changeDirection(RIGHT_DIR);
